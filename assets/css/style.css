@@ -11,7 +11,7 @@
 }
 
 .dark-theme {
-  --prime: rgb(19, 18, 19);
+  --prime: #131213;
   --sec: #201e22;
   --nav-brand: #b203f9;
   --nav-text: #f1f0f1;
@@ -19,6 +19,17 @@
   --header-h1: #9b0eca;
   --header-btn: #38024b;
   --text: #86818a;
+}
+
+.light-theme {
+  --prime: #f1f0f1;
+  --sec: #38024b;
+  --nav-brand: #e6c2fe;
+  --nav-text: #f1f0f1;
+  --header-back: #aba7ad;
+  --header-h1: #201e22;
+  --header-btn: #960cba;
+  --text: #131213;
 }
 
 body {
@@ -97,6 +108,7 @@ div.modal-body a{
 /*********** INDEX ***********/
 header{
   margin-top: 8rem;
+  padding: 1rem;
 }
 
 header div {
@@ -116,9 +128,8 @@ header .btn {
 
 header img {
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
 }
-
 
 
 /*********** PROJECTS ***********/

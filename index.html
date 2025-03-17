@@ -31,7 +31,7 @@
           </li>
         </ul>
         <span type="button" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="Mudar tema"
-          class="btn">
+          class="btn" onclick="change()">
           <a class="fa-regular fa-sun"></a>
         </span>
       </div>
@@ -60,10 +60,8 @@
             <a href="projects.html" class="btn">Projetos</a>
           </div>
         </div>
-        <div class="col-lg-4">
-          <figure class="header-img">
-            <img id="photo" src="assets/img/diana-moon.jpg" alt="Imagem de Diana" />
-          </figure>
+        <div class="col-lg-4 header-img p-3">
+          <img class="img-fluid" id="photo" src="assets/img/diana-moon.jpg" alt="Imagem de Diana" />
         </div>
       </div>
     </div>
@@ -71,7 +69,7 @@
   <footer class="container text-center mt-3 p-3">
     <div id="footer">
       <a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/dianafismed/"></a>
-      <a class="fa fa-whatsapp" target="_blank" onclick="whatsapp()" href=""></a>
+      <a class="fa fa-whatsapp whatsapp" target="_blank" href="https://wa.me/5516981994052"></a>
       <a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/dianafismed/"></a>
       <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/dianafismed/"></a>
       <a class="fa fa-github" target="_blank" href="https://github.com/dianafismed"></a>
@@ -86,7 +84,8 @@
           <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <a target="_blank" onclick="whatsapp()" href=""><i class="fa-brands fa-whatsapp"></i></a>
+          <a class="whatsapp" target="_blank" href="https://wa.me/5516981994052"><i
+              class="fa-brands fa-whatsapp"></i></a>
           <a target="_blank" href="mailto:dianafismed@yahoo.com.br"><i class="fa-regular fa-envelope"></i></a>
         </div>
       </div>
