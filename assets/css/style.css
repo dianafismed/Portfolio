@@ -2,7 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&family=Raleway&display=swap");
 
-
 /*********** MAIN STYLES ***********/
 * {
   padding: 0;
@@ -19,6 +18,7 @@
   --header-h1: #9b0eca;
   --header-btn: #38024b;
   --text: #86818a;
+  --foto: url("assets/img/diana-moon.jpg");
 }
 
 .light-theme {
@@ -46,7 +46,6 @@ a {
   text-decoration: none;
 }
 
-
 /*********** GENERIC STYLES ***********/
 nav {
   background-color: var(--sec);
@@ -59,6 +58,7 @@ a.navbar-brand {
   font-weight: 500;
   color: var(--nav-brand);
 }
+
 a.navbar-brand:hover {
   color: var(--nav-text);
 }
@@ -67,13 +67,14 @@ a.nav-link {
   color: var(--nav-text);
   margin: 0 0.5rem;
 }
+
 a.nav-link:hover {
   color: var(--nav-brand);
 }
 
 span a {
   color: var(--text);
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 span a:hover {
@@ -90,7 +91,8 @@ footer {
   font-size: 1.5rem;
 }
 
-footer a, div.modal-body a {
+footer a,
+div.modal-body a {
   color: var(--nav-brand);
   margin: 0 1rem;
 }
@@ -100,13 +102,12 @@ div.modal-content {
   color: var(--text);
 }
 
-div.modal-body a{
+div.modal-body a {
   font-size: 2rem;
 }
 
-
 /*********** INDEX ***********/
-header{
+header {
   margin-top: 8rem;
   padding: 1rem;
 }
@@ -131,13 +132,12 @@ header img {
   border-radius: 2rem;
 }
 
-
 /*********** PROJECTS ***********/
 section {
   margin-top: 9rem;
 }
 
-.card{
+.card {
   background-color: var(--header-back);
   color: var(--nav-brand);
   border: 1px solid var(--nav-brand);
@@ -149,20 +149,20 @@ section {
   border: 1px solid var(--header-btn);
 }
 
-.card li{
+.card li {
   line-height: 2rem;
 }
 
-.card a{
+.card a {
   color: var(--nav-text);
 }
 
-.card a:hover{
+.card a:hover {
   color: var(--header-h1);
 }
 
-.card h3::before{
-  content: '';
+.card h3::before {
+  content: "";
   position: relative;
   top: -20px;
   background-color: var(--border-color);
@@ -171,39 +171,56 @@ section {
   padding: 5px;
 }
 
-
 /*********** ABOUT ***********/
-#about{
+#about {
   margin-top: 7.7rem;
   background-color: var(--header-back);
   color: var(--text);
 }
 
-#about h1{
+#about h1 {
   color: var(--header-h1);
   padding: 2rem;
 }
 
-#about h3{
+#about h3 {
   color: var(--nav-brand);
   text-decoration: underline;
   padding: 1rem;
 }
 
-#about img{
+#about img {
   width: 100%;
   border-radius: 50%;
 }
 
-#grade{
+#grade {
   padding-left: 5rem;
 }
 
-
 /*********** MEDIAS ***********/
+@media (max-width: 430px) {
+  a.navbar-brand {
+    font-size: 1.5rem;
+  }
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
+  header {
+    margin-top: 4rem;
+  }
+
+  header img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  header img {
+    width: 60%;
   }
 }

@@ -15,4 +15,9 @@ myModal.addEventListener("shown.bs.modal", () => {
 function change() {
   document.body.classList.toggle("dark-theme");
   document.body.classList.toggle("light-theme");
+
+  let foto = document.getElementsByTagName("img");
+  foto.src = "assets/img/diana-sun.jpg";
+  console.log(foto[0].src);
+  
 }
